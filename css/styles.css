@@ -18,6 +18,7 @@
     --main-bcg:#FFF;
     --grey-bcg: #F5F4FA;
     --bcg-btn: #F5F4FA;
+    --icon-grey-fil: #AFB1B8;
 
 }
 
@@ -74,7 +75,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .section {
@@ -149,10 +150,15 @@ body {
     color: var(--accent-color);
 }
 
+
+
 .contacts {
     display: flex;
     margin-left: auto;
+
 }
+
+
 
 
 .contacts .item+.item {
@@ -160,11 +166,17 @@ body {
 }
 
 .contacts .contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-text);
+    /* fill: currentColor; */
 }
 
 .contacts .contacts-link:hover,
@@ -173,7 +185,32 @@ body {
 
 }
 
+.icon-contacts {
+    fill: currentColor;
+}
+
+/* .icon-contacts:hover {
+    color: var(--accent-color);
+} */
+
 /* hero */
+
+.hero-background {
+    height: 600px;
+    max-width: 1600px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+
+    background-image: linear-gradient(
+    to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../images/heroimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
 
 
 .hero {
@@ -254,6 +291,25 @@ body {
     
 }
 
+.thumb {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    align-items: center;
+
+    background-color:  var(--grey-bcg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+
+}
+
+.icon-advantages {
+    height: 70px;
+    
+
+}
+
 .advantages-title {
     font-weight: 700;
     font-size: 14px;
@@ -315,6 +371,8 @@ margin-bottom: 50px;
 
 .team .item {
     background-color: var(--main-bcg);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
 }
 
@@ -334,6 +392,7 @@ margin-bottom: 50px;
     text-align: center;
     letter-spacing: 0.03em;
     font-size: 16px;
+    margin-bottom: 16px;
 }
 
 .team-name-position {
@@ -508,3 +567,109 @@ margin-bottom: 50px;
 }
 
 
+
+/* /--------* social icons *----------/ */
+
+.list-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+
+    
+}
+.icon-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    gap: 10px;
+}
+
+.link-icon-social {
+    
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    color: var(--icon-grey-fil);
+
+    }
+.icon-social-in-link {
+    fill: currentColor;
+}
+    
+.link-icon-social:hover {
+    background-color: var(--accent-color);
+}
+
+.link-icon-social:hover .icon-social-in-link {
+    fill: var(--white-text);
+}
+
+
+/* cliens */
+
+.clients-title {
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
+    font-size: 36px;
+    margin-bottom: 50px;
+
+}
+
+.clients-list {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    
+}
+
+.list-client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+
+    
+}
+
+.clients-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.icon-client {
+    fill: currentColor;
+}
+
+.clients-logo-link:hover {
+    border-color: var(--accent-color);
+}
+
+.clients-logo-link:hover .icon-client {
+    fill: var(--accent-color)
+
+}
