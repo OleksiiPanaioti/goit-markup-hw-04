@@ -455,7 +455,8 @@ margin-bottom: 50px;
 .btn:focus {
     color: var(--white-text);
     background-color: var(--accent-color);
-    transition: 0.7s;
+    transition: 0.3s;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* projects */
@@ -498,11 +499,21 @@ margin-bottom: 50px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     font-size: 16px;
-
-
-
+    color: var(--main-text);
     
 }
+
+.link-projects-portfolio {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.link-projects-portfolio:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 /* -------footer------- */
 
@@ -606,11 +617,11 @@ margin-bottom: 50px;
     fill: currentColor;
 }
     
-.link-icon-social:hover {
+.link-icon-social:hover, :focus {
     background-color: var(--accent-color);
 }
 
-.link-icon-social:hover .icon-social-in-link {
+.link-icon-social:hover, :focus .icon-social-in-link {
     fill: var(--white-text);
 }
 
@@ -646,7 +657,6 @@ margin-bottom: 50px;
     width: calc((100% - 150px) / 6);
     height: 92px;
 
-    
 }
 
 .clients-logo-link {
@@ -665,11 +675,11 @@ margin-bottom: 50px;
     fill: currentColor;
 }
 
-.clients-logo-link:hover {
+.clients-logo-link:hover, :focus {
     border-color: var(--accent-color);
 }
 
-.clients-logo-link:hover .icon-client {
+.clients-logo-link:hover, :focus .icon-client {
     fill: var(--accent-color)
 
 }
@@ -682,9 +692,6 @@ margin-bottom: 50px;
     gap: 70px;
  }  
 
-.social-footer {
-
-}
 .social-title-footer {
    
     font-weight: 700;
@@ -732,23 +739,12 @@ margin-bottom: 50px;
 
 }
 
-/* .link-icon-social {
-
-    display: flex;
-    justify-content: center;
-
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-
-    color: var(--icon-grey-fil);
-} */
 
 .icon-social-in-link-footer {
     fill: currentColor;
 }
 
-.link-icon-social-footer:hover {
+.link-icon-social-footer:hover, :focus {
     background-color: var(--accent-color);
 }
 
